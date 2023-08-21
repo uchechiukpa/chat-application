@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: var(--background-color); */
+    color: var(--text-color);
+}
+:root{
+    --dark-blue: #05031c;
+    --text-color: #ffffff;
+    --light-blue: #00A3FF;
+    --dark-gray: #050b1e;
+}
+
+@media (min-width: 1204px) {
+    .container{
+        display: grid;
+        grid-template-columns: 350px 1fr;
+        grid-template-rows: 100px 1fr 100px;
+        height: 100vh;
+    }
+
+    .header{
+        /* background-color: black; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 30px;
+        border-bottom: 1px solid gray;
+        background-color: var(--dark-blue) ;
+    }
+    .profile{
+        display: flex;
+        align-items: center;
+    }
+
+    .profile img{
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+    }
+
+
+    /* SIDEBAR */
+    .sidebar{
+        /* background-color: aquamarine; */
+        grid-row: 1/span 3;
+        border-right: 1px solid gray;
+        background-color: var(--dark-blue);
+
+    }
+
+    .sidebar-actions{
+        display: flex;
+        align-items: center;
+    }
+
+    .sidebar-search{
+        border-radius: 5px;
+        padding: 5px 10px;
+        border: 1px solid gray;
+    }
+    .sidebar-search input{
+        outline: none;
+        border: none
+    }
+
+    .sidebar-add{
+        border-radius: 5px;
+        background-color: var(--message-color);
+        height: 40px;
+        width: 40px;
+        
+    }
+    .sidebar img{
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+    }
+    .pinned-symbol{
+        display: flex;
+        align-items: center;
+    }
+
+
+    .pinned-message{
+        display: flex;
+    }
+
+    .pinned-message .message-details{
+        display: flex;
+        align-items: center;
+    }
+    .pinned-message span{
+        margin-top: 16px;
+        padding-right: 5px;
+    }
+
+    .all-messages-symbol{
+        display: flex;
+        align-items: center;
+    }
+
+
+    .all-message{
+        display: flex;
+        justify-content: space-between;
+    }
+    .all-message .message-details{
+        display: flex;
+        align-items: center;
+    }
+    .message-details{
+        /* width: 250px; */
+    }
+    .message-details h3, .message-details p{
+        white-space: nowrap;
+        overflow: hidden;
+        width: 200px;
+        text-overflow: ellipsis;
+        padding: 0 0 0 6px ;
+
+    }
+
+    .all-message span{
+        margin-top: 16px;
+        padding-right: 5px;
+    }
+
+    /* MAIN CONTENT */
+    .main{
+        background-color: var(--dark-gray);
+    }
+
+    .chat-container img{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+
+    .recieving-message{
+        /* position: relative;
+        left: 600px;
+        background-color: #05031c;
+        max-width: 1000px; */
+        display: flex;
+        justify-content: end;
+        flex-direction: row-reverse;
+        align-items: center;
+        
+    }
+
+    /* .recipent{
+        background-color: aqua;
+    } */
+    .chat-profile{
+        display: flex;
+    }
+    .recipient-details{
+        display: flex;
+        justify-content: end;
+    }
+
+
+    .recipient-details .chat-date{
+        order: -1;
+    }
+
+
+    .outgoing-message{
+        display: flex;
+        align-items: center;
+    }
+    .senders-details{
+        display: flex;
+    }
+
+    .recipent-chat{
+        background-color: var(--light-blue);
+        max-width: 700px;
+        min-width: 300px;
+        padding: 10px;
+        border-radius: 3px 0 3px 3px;
+    }
+
+    .senders-chat{
+        background-color: var(--light-blue);
+        max-width: 700px;
+        min-width: 300px;
+        padding: 10px;
+        border-radius: 0 3px 3px 3px;
+    }
+
+
+    .footer{
+        border-top: 1px solid gray;
+        background-color: var(--dark-blue);
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .message-area{
+        display: flex;
+        align-items: center;
+    }
+    .message-area textarea{
+        outline: none;
+        border: none;
+        background-color: var(--dark-blue);
+        resize: none;
+        width: 300px;
+    }
+
+    .footer .action-buttons{
+        display: flex;
+        align-items: center;
+    }
+
+
+    .action-buttons button{
+        background-color: var(--light-blue);
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+    }
+
+}
