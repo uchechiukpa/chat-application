@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.signup-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.signup-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+.signup-details{
+    width: 80%;
+}
+.signup-details h1{
+    margin: 30px 0 5px 0;
+}
+
+.signup-details p{
+    margin: 5px 0 20px 0;
+}
+.signup-details input{
+    width: 100%;
+    /* outline: rgb(13, 26, 101); */
+    border: 2px solid rgb(13, 26, 101);
+    padding: 0 2px ;
+    border-radius: 5px;
+    height: 40px; 
+    margin: 20px 0;
+}
+
+.outer-button{
+    background-color: rgb(13, 26, 101);
+    width: 40px;
+    height: 20px;
+    padding: 1px;
+    border-radius: 20px;
+}
+
+.inner-button{
+    background-color: #ffffff;
+    width: 20px;
+    /* padding: 3px 0; */
+    height: 18px;
+    border-radius: 50%; 
+}
+
+.remember-me{
+    display: flex;
+    align-items: center;
+}
+
+.remember-me p{
+    margin: 0 0 0 5px;
+}
+.signup-details button{
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(13, 26, 101);
+    color: white;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.otp-section{
+    background-image: url("../images/otp-background.jpg");
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px 0 0 50px;
+
+}
+.otp-details{
+    text-align: center;
+    color: white;
+}
+
+.otp-details input {
+    height: 100px;
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+    margin: 10px 5px;
+    font-size: 50px;
+    text-align: center;
+}
+
+
+.otp-details h1{
+    margin: 10px 0;
+}
+
+.otp-details p{
+    margin: 10px 0;
+}
+
+.otp-details a{
+    text-decoration: underline;
+    font-weight: 600;
+}
