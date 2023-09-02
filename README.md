@@ -23,9 +23,9 @@ This chat application includes the following features:
 - Message search across all friends or within specific chat threads.
 
 
-![Chat Application Screenshot](https://imgur.com/hcHvkrm)
-![Chat Application Screenshot](https://imgur.com/V5JEkUY)
-![Chat Application Screenshot](https://imgur.com/dQ7dt0y)
+![Chat Application Screenshot](https://i.imgur.com/hcHvkrm.png)
+![Chat Application Screenshot](https://i.imgur.com/V5JEkUY.png)
+![Chat Application Screenshot][(https://imgur.com/dQ7dt0y)](https://i.imgur.com/dQ7dt0y.png)
 
 ## Getting Started
 
