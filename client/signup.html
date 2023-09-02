@@ -9,37 +9,46 @@
   </head>
   <body>
     <div class="signup-container">
-      <div class="signup-section">
+      <div class="signup-section active">
         <div class="signup-details">
+          <form name="signup">
             <h1>Welcome Back</h1>
             <p>Enter your email address to receive a one time password</p>
-    
-            <input placeholder="Email"/>
-            <br/>
+
+            <input placeholder="Email" type="text" name="email"/>
+            <br />
             <div class="remember-me">
-                <div class="outer-button"><div class="inner-button"></div></div>
-                <p>Remember me for 30 days</p>
+              <div class="outer-button"><div class="inner-button"></div></div>
+              <p>Remember me for 30 days</p>
             </div>
 
-            <button>Send Code</button>
+            <button class="signup-button">Send Code</button>
+          </form>
         </div>
-
       </div>
 
       <div class="otp-section">
         <div class="otp-details">
           <h1>Enter Code</h1>
-          <p>We sent code to johnDoe@gmail.com</p>
+          <p class="email-text">A code will be sent to your email</p>
           <div>
-            <input />
-            <input />
-            <input />
-            <input />
+            <form name="otp">
+              <input id="firstDigit"  name="firstDigit"  class="digit-input" min="0" max="9" type="number" autofocus />
+              <input id="secondDigit" name="secondDigit" class="digit-input" min="0" max="9" type="number"/>
+              <input id="thirdDigit"  name="thirdDigit"  class="digit-input" min="0" max="9" type="number" />
+              <input id="fourthDigit" name="fourthDigit" class="digit-input" min="0" max="9" type="number"/>
+
+              <input type="hidden" name="email" value=""/>
+              <input type="hidden" name="rememberMe"  value=""/>
+            </form>
+
           </div>
 
-          <p>Didn't get code? <a>click to resend</a></p>
+          <p>Didn't get code? <a href="#" class="resend-link" id ="resend-link">click to resend</a></p>
         </div>
       </div>
     </div>
+
+    <script type="module" src="./assests/js/signup.js"></script>
   </body>
 </html>

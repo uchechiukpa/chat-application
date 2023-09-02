@@ -13,11 +13,21 @@
     width: 100vw;
 }
 
-.signup-section{
+.signup-container.active{
+    background-image: url("../images/otp-background.jpg");
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    transition: width 0.3 ease;
+}
+.signup-section.active{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 30%;
+}
+.signup-section{
+    display: none;
 }
 .signup-details{
     width: 80%;
@@ -39,20 +49,30 @@
     margin: 20px 0;
 }
 
-.outer-button{
-    background-color: rgb(13, 26, 101);
+
+
+.outer-button, .inner-button {
+    background-color: #ffffff;
+    width: 20px;
+    height: 18px;
+    border-radius: 50%;
+}
+
+.outer-button {
+    background-color: grey;
     width: 40px;
     height: 20px;
     padding: 1px;
     border-radius: 20px;
 }
 
-.inner-button{
-    background-color: #ffffff;
-    width: 20px;
-    /* padding: 3px 0; */
-    height: 18px;
-    border-radius: 50%; 
+.outer-button.active {
+    background-color: rgb(13, 26, 101);
+}
+
+.inner-button.active {
+    position: relative;
+    left: 18px;
 }
 
 .remember-me{
@@ -87,6 +107,15 @@
 .otp-details{
     text-align: center;
     color: white;
+    display: none;
+}
+
+
+.otp-section.active{
+    background-image: none;
+}
+.otp-details.active{
+    display: block;
 }
 
 .otp-details input {
@@ -111,4 +140,19 @@
 .otp-details a{
     text-decoration: underline;
     font-weight: 600;
+}
+
+.resend-link{
+    color: white;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
