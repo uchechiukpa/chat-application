@@ -25,7 +25,7 @@ This chat application includes the following features:
 
 ![Chat Application Screenshot](https://i.imgur.com/hcHvkrm.png)
 ![Chat Application Screenshot](https://i.imgur.com/V5JEkUY.png)
-![Chat Application Screenshot][(https://imgur.com/dQ7dt0y)](https://i.imgur.com/dQ7dt0y.png)
+![Chat Application Screenshot][Imgur](https://i.imgur.com/dQ7dt0y.png)
 
 ## Getting Started
 
